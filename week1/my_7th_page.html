@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>กรอกอายุ</h2>
+    <input type="number" id="age-input" />
+    <script>
+      document
+        .getElementById("age-input")
+        .addEventListener("input", function () {
+          const value = this.value;
+          if (value < 20) {
+            alert("คุณยังเด็ก");
+          } else {
+            alert("คุณโตแล้ว");
+          }
+        });
+    </script>
+  </body>
+</html>
