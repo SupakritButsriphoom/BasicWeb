@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>name and language</title>
+  </head>
+  <body>
+    <h2>กรอกชื่อ</h2>
+    <input type="text" placeholder="Enter you name" id="name-input" />
+    <h1 id="show-name">-</h1>
+    <h1>ภาษาโปรแกรมที่ชอบ</h1>
+    <select id="language-select">
+      <option value="JavaScript">JavaScript</option>
+      <option value="Python">Python</option>
+      <option value="Go">Go</option>
+    </select>
+    <h1 id="show-language">-</h1>
+    <script>
+      document
+        .getElementById("name-input")
+        .addEventListener("input", function () {
+          const value = this.value;
+          document.getElementById("show-name").innerText =
+            "ยินดีต้อนรับ " + value;
+        });
+
+      document
+        .getElementById("language-select")
+        .addEventListener("input", function () {
+          const value = this.value;
+          document.getElementById("show-language").innerText =
+            "คุณเลือกภาษา " + value;
+        });
+    </script>
+  </body>
+</html>
