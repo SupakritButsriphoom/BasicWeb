@@ -1,0 +1,9 @@
+h1 {
+  font-size: 50px;
+}
+button {
+  background-color: #e6f3e6;
+  font-size: 60px;
+  border: 10px solid #4CAF50;
+  cursor: pointer;
+}
